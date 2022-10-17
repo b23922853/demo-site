@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        mycar: '#FFFFFF',
+                        bg_main: '#FF0000',
+                        bg_sub: '#0000FF'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .box{
+                background-color: pink;
+            }
+
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="sm:container mx-auto box text-center">
+        <h1 class="text-3xl font-bold underline text-bg_sub ">
+            Hello world!
+        </h1>
+    </div>
+
+
+</body>
+
+</html>
